@@ -1,0 +1,79 @@
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    margin: 0;
+    background-color: var(--Yellow);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid var(--Black);
+    border-radius: 1rem;
+    background-color: var(--White);
+    max-width: 360px;
+    box-shadow: 8px 4px 0rem 0px #000;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.container > img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+button {
+    width: fit-content;
+    padding:0.5rem 1rem;
+    font-size: 0.9rem;
+    margin: 1.2rem 0;
+    background-color: var(--Yellow);
+    border: none;
+    border-radius: 4px;
+    font-weight: 800;
+}
+article h1 {
+    color: var(--Black);
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: color .15s ease-in-out;
+}
+article > p {
+    color: var(--Grey);
+    line-height: 1.5;
+}
+article h1:hover {
+    color: var(--Yellow);
+    caret-color: #000;
+}
+.container div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.container div img {
+    width: 2rem;
+    height: 2rem;
+}
+.container div p {
+    color: var(--Black);
+    font-weight: 800;
+}
